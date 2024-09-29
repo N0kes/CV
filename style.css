@@ -1,0 +1,474 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+#CV {
+    height: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-between;
+    align-items: center; 
+    /* flex-wrap: wrap; Permet à l'image et au texte de se réorganiser si nécessaire */
+    padding: 20px; 
+}
+
+.timeline h1 {
+    display: flex;
+    flex-direction: column;
+    color: yellow;
+    align-items: center;
+    width: 100%;
+    font-size: 500%;
+}
+
+.container2 h1 {
+    display: flex;
+    flex-direction: column;
+    color: yellow;
+    align-items: center;
+    width: 100%;
+    font-size: 500%;
+}
+
+.card-container h1 {
+    display: flex;
+    flex-direction: column;
+    color: yellow;
+    align-items: center;
+    width: 100%;
+    font-size: 500%;
+}
+
+nav {
+    text-align: right;
+    font-size: 20px;
+}
+
+header nav ul {
+    display: flex;
+    padding: 0;
+    justify-content: space-around;
+    background-color: rgb(34, 34, 34);
+    height: 8vh;
+    align-items: center;
+}
+
+a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+a:hover,
+a.active {
+    color: yellow;
+}
+
+nav li {
+    display: inline;
+    list-style: none;
+}
+
+.accueil {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    max-width: 45%;
+    text-align: left;
+}
+
+#hello {
+    color: yellow;
+}
+
+.parcoursimage {
+    width: 50%; 
+    display: flex;
+    justify-content: center;
+}
+
+.parcoursimage img {
+    width: 100%; 
+    height: auto;
+    max-width: 800px; 
+    border-radius: 30px;
+    box-shadow: 5px 5px black;
+}
+
+input, select, textarea {
+    width: 100%; 
+    padding: 12px;  
+    border: 1px solid #ffffff; 
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    margin-top: 6px;
+    margin-bottom: 16px; 
+    resize: vertical; 
+    background-color: grey;
+    color: white;
+}
+
+input[type=submit] {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: yellow;
+}
+
+.container2 {
+    border-radius: 5px;
+    background-color: #454545;
+    padding: 20px;
+    margin-left: 10%;
+    margin-right: 10%;
+    color: white;
+    border: 1px solid white;
+} 
+
+.timeline {
+    position: relative;
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 60px;
+    background: #000000;
+}
+
+.timeline:after {
+    content: "";
+    position: absolute;
+    top: 210px;
+    bottom: 20px;
+    left: 94%;
+    width: 8px;
+    background: yellow;
+    border-radius: 3px;
+    z-index: 1;
+}
+
+.timeline article {
+    position: relative;
+    background: #eeeeee;
+    width: 94%;
+    padding: 15px;
+}
+
+.timeline article + article {
+    margin-top: 20px;
+}
+
+.timeline article:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 101%;
+    background: #d6d6d6;
+    width: 24px;
+    height: 24px;
+    border: 6px yellow solid;
+    border-radius: 50%;
+    z-index: 2;
+}
+
+.timeline article:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 0;
+    height: 0;
+    border-top: 20px solid transparent;
+    border-left: 16px solid #eeeeee;
+    border-bottom: 20px solid transparent;
+}
+
+span {
+    color: yellow;
+}
+
+article li {
+    color: white;
+    list-style: none;
+    margin: 0 10px;
+}
+
+article ul {
+    display: flex;
+    padding: 0;
+    background-color: rgb(34, 34, 34);
+    height: 8vh;
+    align-items: center;
+    margin-right: 0;
+    justify-content: space-evenly;
+    
+
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+    gap: 5%;
+    color: white;
+    margin-bottom: 10%;
+
+}
+.card {
+    border: 1px solid #ccc;
+    padding: 5%;
+    text-align: left;
+    align-items: center;
+}
+
+.container4 {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    margin-bottom: 5%;
+}
+
+.card li {
+    padding: 2%;
+}
+
+footer {
+    background-color: rgb(34, 34, 34);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 3vh;
+    position: sticky;
+    bottom: 0;
+    z-index: 999;
+    font-size: 100%;
+}
+
+footer span {
+    color: white;
+}
+
+
+@media (max-width: 640px) {
+    .container {
+        flex-direction: column; 
+    }
+    .container2 {
+        display: flex;
+        flex-direction: column;
+        border-radius: 5px;
+        background-color: #454545;
+        padding: 20px;
+        margin-left: 10%;
+        margin-right: 10%;
+        color: white;
+        border: 1px solid white;
+    } 
+    .container3 {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        width: 100%;
+        align-items: center;
+        margin-left: -4%;
+        margin-bottom: 5%;
+    }
+
+    .container4 {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        width: 100%;
+        align-items: center;
+        margin-left: 0%;
+        margin-bottom: 60%;
+    }
+
+    .timeline h1 {
+        display: flex;
+        flex-direction: column;
+        color: yellow;
+        align-items: center;
+        width: 110%;
+        font-size: 400%;
+    }
+    .container2 h1 {
+        display: flex;
+        flex-direction: column;
+        color: yellow;
+        align-items: center;
+        width: 100%;
+        font-size: 400%;
+
+    }
+    .card-container h1 {
+        display: flex;
+        flex-direction: column;
+        color: yellow;
+        align-items: center;
+        width: 100%;
+        font-size: 400%;
+        margin-top: 20%;   
+        margin-bottom: 0; 
+    }
+
+    .accueil {
+        max-width: 100%; 
+        text-align: center; 
+        margin-bottom: 20px; 
+        font-size: 135%;
+
+    }
+
+    .parcoursimage {
+        width: 100%; 
+    }
+
+    .parcoursimage img {
+        max-width: 100%; 
+    }
+
+    footer {
+        font-size: 80%;
+        height: 3vh;
+    }
+}
+
+@media (min-width: 641px) and (max-width: 1007px) {
+    .container {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        width: 100%;
+        margin-right: 0;
+    }
+    .container2 {
+        display: flex;
+        flex-direction: column;
+        border-radius: 5px;
+        background-color: #454545;
+        padding: 20px;
+        margin-left: 10%;
+        margin-right: 10%;
+        color: white;
+        border: 1px solid white;
+    } 
+    .container3 {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        width: 100%;
+        margin-left: 0;
+        margin-bottom: 5%;
+    }
+    .container4 {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+        width: 100%;
+        align-items: center;
+        margin-left: 0;
+        margin-bottom: 40%;
+    }
+
+    .timeline h1 {
+        display: flex;
+        flex-direction: column;
+        color: yellow;
+        align-items: center;
+        width: 100%;
+        font-size: 400%;
+    }
+    .container2 h1 {
+        display: flex;
+        flex-direction: column;
+        color: yellow;
+        align-items: center;
+        width: 100%;
+        font-size: 400%;
+
+    }
+    .card-container h1 {
+        display: flex;
+        flex-direction: column;
+        color: yellow;
+        align-items: center;
+        width: 100%;
+        font-size: 400%;
+        margin-top: 11%;   
+        margin-bottom: 0; 
+    }
+    .accueil {
+        max-width: 45%; 
+        margin-left: 5%; 
+        text-align: left; 
+        font-size: 145%;
+
+    }
+    .parcoursimage {
+        width: 45%; 
+        margin-right: 5%; 
+
+    }
+}
+
+@media (min-width: 1008px) {
+    .container {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        width: 100%;
+        margin-right: 0;
+    }
+    .container3 {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        width: 100%;
+        align-items: center;
+        margin-bottom: 5%;
+    }
+    header {
+        width: 100%;
+    }
+    .parcoursimage {
+        width: 45%; 
+        margin-right: 5%; 
+
+    }
+    .accueil {
+        max-width: 45%; 
+        text-align: left; 
+        margin-left: 5%; 
+        font-size: 150%;
+
+    }
+    .card-container h1 {
+        display: flex;
+        flex-direction: column;
+        color: yellow;
+        align-items: center;
+        width: 100%;
+        margin-top: 12%;   
+        margin-bottom: 0; 
+    }
+}

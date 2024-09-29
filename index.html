@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <title>Julien NIEDERER</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a class="active" href="#accueil">Accueil</a></li>
+                <li><a href="#etudes">Etudes</a></li>
+                <li><a href="#experiences">Experiences</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="accueil" id="accueil">
+            <h3 id="hello">BONJOUR</h3>
+            <h1>Je suis Julien Niederer</h1>
+            <h3 id="pres">Etudiant MSC PRO à Epitech</h3>
+            <a id="CV" href="CV_2024-09-29_Julien_Niederer.pdf"><button type="button">Télécharger mon CV !</button></a>
+        </div>
+        <div class="parcoursimage">
+            <img src="juju et le blob.png" width="800px" style="border-radius: 30px; box-shadow: 5px 5px black;">
+        </div>
+    </div>
+    <div class="container3">
+        <div class="timeline" id="etudes">
+            <h1>Etudes</h1>
+            <article>
+            <h2>MSC PRO – OPTION CYBERSECURITE/CLOUD</h2>
+            <ul>
+                <li><span>Lieu</span> Nancy</li>
+                <li><span>Date</span> 2024-2027</li>
+                <li><span>Ecole</span> Epitech</li>
+            </ul>
+            </article>
+            <article>
+            <h2>CYCLE BAC+2 – TECHNICIEN D’INFRASTRUCTURE INFORMATIQUE ET SÉCURITÉ</h2>
+            <ul>
+                <li><span>Lieu</span> Metz</li>
+                <li><span>Date</span> 2022-2024 </li>
+                <li><span>Ecole</span> MEWO</li>
+            </ul>
+            </article>
+            <article>
+            <h2>CYCLE BAC – CYCLE TECHNICIEN D’ASSISTANCE INFORMATIQUE</h2>
+            <ul>
+                <li><span>Lieu</span> Metz</li>
+                <li><span>Date</span> 2021-2022 </li>
+                <li><span>Ecole</span> MEWO</li>
+            </ul>
+            </article>
+        </div>
+    </div>
+    <div class="container4">
+        <div class="card-container" id="experiences">
+            <h1>Experiences</h1>
+            <div class="card">
+                <h2>Administrateur Systèmes et Réseaux</h2>
+                <a><span>Date : </span>10/2023-07/2024</a><br>
+                <a><span>Entreprise : </span>MANULOC</a>
+                <ul>
+                    <li>Surveillance des systèmes et des réseaux à l'aide d'outils tel que Zabbix</li>
+                    <li>Gestion des tickets de niveau 2 et 3</li>
+                    <li>Gestion des serveurs virtuels Nutanix AHV</li>
+                    <li>Administration du serveur WDS et de l'outil de gestion des images (MDT)</li>
+                    <li>Configuration et gestion des VM avec Ansible</li>
+                    <li>Migration Active Directory</li>
+                    <li>Préparation et déploiement d'équipements réseau (Bornes Wi-Fi)</li>
+                    <li>Création de règles sur un pare-feu (Fortinet et Cato Networks)</li>
+                </ul>
+            </div>
+            <div class="card">
+                <h2>Technicien Support en Informatique</h2>
+                <a><span>Date : </span>07/2022-10/2023</a><br>
+                <a><span>Entreprise : </span>MANULOC</a>
+                <ul>
+                    <li>Support aux utilisateurs (hotline, prise de main à distance)</li>
+                    <li>Gestion des tickets d'incident et escalade au niveau 2 le cas échéant</li>
+                    <li>Rédaction de modes opératoires et formation</li>
+                    <li>Création des comptes informatiques</li>
+                    <li>Prise en charge et traitement des demandes de droit d'accès et d'investissement</li>
+                    <li>Maintenance et préparation des micro-ordinateurs, des clients légers et des terminaux mobiles</li>
+                    <li>Résolution des problèmes mineurs relatifs à la ToIP</li>
+                    <li>Création et gestion des comptes de messagerie et des groupes de diffusion (IBM Notes et G Suite)</li>
+                    <li>Gestion du parc informatique</li>
+                </ul>
+            </div>
+            <!-- Repeat the card structure for more items -->
+        </div>
+    </div>
+    <div>
+        <div class="container2" id="contact">
+        <h1>Contact</h1>
+        <form>
+      
+            <label for="fname">Prénom</label>
+            <input type="text" id="fname" name="firstname" placeholder="Votre prénom">
+      
+            <label for="lname">Nom</label>
+            <input type="text" id="lname" name="lastname" placeholder="Votre nom">
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Votre email">
+      
+            <label for="subject">Message</label>
+            <textarea id="subject" name="subject" placeholder="Votre message" style="height:200px"></textarea>
+      
+            <input type="submit" value="Envoyé">
+        </form>
+        </div>
+    </div> 
+    <footer>
+        <a href="https://github.com/N0kes">Github</a>
+        <a href="https://www.linkedin.com/in/julien-niederer">Lkdn</a>
+        <span>julien.niederer@epitech.eu</span>
+        <span>06 06 06 06 06</span>
+
+    </footer>  
+</body>
+
+</html><!--  -->
